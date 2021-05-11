@@ -1,25 +1,26 @@
 //Clone Time
 int motorPin1 = 5;
 int motorPin2 = 3;
+int buttonPin = 2;
 
 
 void setup() {
+  pinMode(buttonPin, INPUT);
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
   Serial.begin(9600);
-  while (! Serial);
-  Serial.println("Speed 0 to 255");
 }
 
 
 void loop() {
-  if (Serial.available())
-  {
-    int speed = Serial.parseInt();
-    if (speed >= 0 && speed <= 255)
-    {
-      analogWrite(motorPin1, speed);
-      analogWrite(motorPin2, speed);
-    }
+  Serial.println(digitalRead(buttonPin));
+  int fwd = digitalRead(buttonPin);
+  if (fwd==HIGH) {
+    analogWrite(motorPin1, 200);
+    analogWrite(motorPin2, 200);
+  }
+  else {
+    analogWrite(motorPin1, 0);
+    analogWrite(motorPin2, 0);
   }
 }

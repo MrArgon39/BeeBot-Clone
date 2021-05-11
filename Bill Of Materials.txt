@@ -1,0 +1,10 @@
+NotBeeBot BOM Version 2
+ 1 Arduino UNO Rev 3
+ 2 NPN 2222A Transistors
+ 2 DG01D Geared Motors
+ 2 1N4007 Diodes
+ Assorted Jumpers
+ 1 Breadboard
+ 2 330Ω Resistors
+ 1 10KΩ Resistor
+ 1 4 pin pushbutton
