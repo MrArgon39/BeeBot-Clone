@@ -1,26 +1,45 @@
 //Clone Time
-int motorPin1 = 5;
-int motorPin2 = 3;
+int leftMotor = 5;
+int rightMotor = 3;
 int buttonPin = 2;
 
 
 void setup() {
   pinMode(buttonPin, INPUT);
-  pinMode(motorPin1, OUTPUT);
-  pinMode(motorPin2, OUTPUT);
+  pinMode(leftMotor, OUTPUT);
+  pinMode(rightMotor, OUTPUT);
   Serial.begin(9600);
 }
 
 
 void loop() {
   Serial.println(digitalRead(buttonPin));
-  int fwd = digitalRead(buttonPin);
-  if (fwd==HIGH) {
-    analogWrite(motorPin1, 200);
-    analogWrite(motorPin2, 200);
+  if (digitalRead(buttonPin) == HIGH) {
+    moveFwd();
   }
-  else {
-    analogWrite(motorPin1, 0);
-    analogWrite(motorPin2, 0);
-  }
+}
+
+void moveFwd() {
+  analogWrite(leftMotor, 200);
+  analogWrite(rightMotor, 200);
+  delay(100);
+  analogWrite(leftMotor, 0);
+  analogWrite(rightMotor, 0);
+
+}
+
+void turnLeft() {
+  analogWrite(leftMotor, 200);
+  delay(100);
+  analogWrite(leftMotor, 0);
+}
+
+void turnRight() {
+  analogWrite(rightMotor, 200);
+  delay(100);
+  analogWrite(rightMotor, 0);
+}
+
+void reverse() {
+  //No
 }

@@ -6,5 +6,5 @@ NotBeeBot BOM Version 2
  Assorted Jumpers
  1 Breadboard
  2 330Ω Resistors
- 1 10KΩ Resistor
- 1 4 pin pushbutton
+ 3 10KΩ Resistor
+ 3 4 pin pushbutton
