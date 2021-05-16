@@ -5,6 +5,10 @@ int rightMotor = 5;
 int fwdButton = 3;
 int leftButton = 4;
 int rightButton = 2;
+int trigPin = 9;
+int echoPin = 10;
+long duration;
+int distance;
 
 void setup()
 {
@@ -13,6 +17,8 @@ void setup()
   pinMode(rightButton, INPUT);
   pinMode(leftMotor, OUTPUT);
   pinMode(rightMotor, OUTPUT);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
   Serial.begin(9600);
 }
 
@@ -34,28 +40,57 @@ void loop()
 
 void moveFwd()
 {
-  analogWrite(leftMotor, 200);
-  analogWrite(rightMotor, 200);
-  delay(100);
-  analogWrite(leftMotor, 0);
-  analogWrite(rightMotor, 0);
+  if (distanceCheck() == false)
+  {
+    analogWrite(leftMotor, 200);
+    analogWrite(rightMotor, 200);
+    delay(100);
+    analogWrite(leftMotor, 0);
+    analogWrite(rightMotor, 0);
+  }
 }
 
 void turnLeft()
 {
-  analogWrite(leftMotor, 200);
-  delay(100);
-  analogWrite(leftMotor, 0);
+  if (distanceCheck() == false)
+  {
+    analogWrite(leftMotor, 200);
+    delay(100);
+    analogWrite(leftMotor, 0);
+  }
 }
 
 void turnRight()
 {
-  analogWrite(rightMotor, 200);
-  delay(100);
-  analogWrite(rightMotor, 0);
+  if (distanceCheck() == false)
+  {
+    analogWrite(rightMotor, 200);
+    delay(100);
+    analogWrite(rightMotor, 0);
+  }
 }
 
 void reverse()
 {
   //No, not gonna happen
+}
+
+bool distanceCheck()
+{
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration * 0.034 / 2;
+  //Serial.println(distance);
+  if (distance < 20)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
