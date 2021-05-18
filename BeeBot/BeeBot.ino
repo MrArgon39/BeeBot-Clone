@@ -42,9 +42,9 @@ void moveFwd()
 {
   if (distanceCheck() == false)
   {
-    analogWrite(leftMotor, 200);
-    analogWrite(rightMotor, 200);
-    delay(100);
+    analogWrite(leftMotor, 255);
+    analogWrite(rightMotor, 255);
+    delay(500);
     analogWrite(leftMotor, 0);
     analogWrite(rightMotor, 0);
   }
@@ -54,8 +54,8 @@ void turnLeft()
 {
   if (distanceCheck() == false)
   {
-    analogWrite(leftMotor, 200);
-    delay(100);
+    analogWrite(leftMotor, 255);
+    delay(500);
     analogWrite(leftMotor, 0);
   }
 }
@@ -64,8 +64,8 @@ void turnRight()
 {
   if (distanceCheck() == false)
   {
-    analogWrite(rightMotor, 200);
-    delay(100);
+    analogWrite(rightMotor, 255);
+    delay(500);
     analogWrite(rightMotor, 0);
   }
 }

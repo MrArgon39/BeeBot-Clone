@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="433.85718"
-     inkscape:cy="234.79538"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="295.01918"
+     inkscape:cy="387.58749"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-perpendicular="true"
@@ -50,26 +50,58 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="Lines &amp; Junk"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+    <path
        id="rect830"
-       width="150"
-       height="100"
-       x="-160.25"
-       y="10.25"
-       ry="2.0045214"
-       transform="rotate(-90)" />
+       style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="rotate(-90)"
+       d="m -158.24548,10.25 102.99548,-10e-7 v 3 h 10 v -3 l 32.995479,10e-7 c 1.110504,0 2.004521,0.894017 2.004521,2.004521 v 95.990959 c 0,1.1105 -0.894017,2.00452 -2.004521,2.00452 H -45.25 v -3 h -10 v 3 h -102.99548 c -1.1105,0 -2.00452,-0.89402 -2.00452,-2.00452 V 12.254521 c 0,-1.110504 0.89402,-2.004521 2.00452,-2.004521 z"
+       sodipodi:nodetypes="sccccssssccccssss" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.101618;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect841-1"
+       width="3.0983818"
+       height="9.9983816"
+       x="85.172806"
+       y="45.250809" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.101618;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect841-3"
+       width="3.0983818"
+       height="9.9983816"
+       x="32.251064"
+       y="45.250809" />
+    <path
+       id="rect896"
+       style="fill:none;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 118.06632,36.950013 h 10 v 27 h 4.97779 v 7 h -20 v -7 h 5.02221 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect896-66"
+       style="fill:none;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 169.34855,60.297664 h -10 v -27 h -4.97779 v -7 h 20 v 7 h -5.02221 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect896-3"
+       style="fill:none;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 141.41889,60.364481 h -10 v -27 h -4.97779 v -7 h 20 v 7 h -5.02221 z"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       id="rect896-8"
+       style="fill:none;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 145.02724,36.787993 h 10 v 27 h 4.97779 v 7 h -20 v -7 h 5.02221 z"
+       sodipodi:nodetypes="ccccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Annotations">
+     inkscape:label="Annotations"
+     style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:Alexis;-inkscape-font-specification:Alexis;stroke-width:0.264583"
+       style="font-size:10.5833px;line-height:1.25;font-family:Alexis;-inkscape-font-specification:Alexis;stroke-width:0.264583;fill:#080808;fill-opacity:1;"
        x="40.224064"
        y="8.151721"
        id="text835"><tspan
@@ -77,10 +109,10 @@
          id="tspan833"
          x="40.224064"
          y="8.151721"
-         style="stroke-width:0.264583">Front</tspan></text>
+         style="stroke-width:0.264583;fill:#080808;fill-opacity:1;">Front</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:Alexis;-inkscape-font-specification:Alexis;stroke-width:0.264583"
+       style="font-size:10.5833px;line-height:1.25;font-family:Alexis;-inkscape-font-specification:Alexis;stroke-width:0.264583;fill:#080808;fill-opacity:1;"
        x="44.63401"
        y="169.58252"
        id="text839"><tspan
@@ -88,6 +120,22 @@
          id="tspan837"
          x="44.63401"
          y="169.58252"
-         style="stroke-width:0.264583">Back</tspan></text>
+         style="stroke-width:0.264583;fill:#080808;fill-opacity:1;">Back</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:0.55;font-family:Alexis;-inkscape-font-specification:Alexis;fill:#080808;fill-opacity:1;stroke-width:0.264583"
+       x="120.94618"
+       y="11.38457"
+       id="text1048"><tspan
+         sodipodi:role="line"
+         id="tspan1046"
+         x="120.94618"
+         y="11.38457"
+         style="fill:#080808;fill-opacity:1;stroke-width:0.264583">Motor</tspan><tspan
+         sodipodi:role="line"
+         x="120.94618"
+         y="17.205383"
+         style="fill:#080808;fill-opacity:1;stroke-width:0.264583"
+         id="tspan1050">Mounts</tspan></text>
   </g>
 </svg>
