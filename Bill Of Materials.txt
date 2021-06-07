@@ -1,4 +1,4 @@
-NotBeeBot BOM Version 2
+NotBeeBot BOM Version 3
  1 Arduino UNO Rev 3
  2 NPN 2222A Transistors
  2 DG01D Geared Motors
@@ -7,4 +7,5 @@ NotBeeBot BOM Version 2
  1 Breadboard
  2 330Ω Resistors
  3 10KΩ Resistor
- 3 4 pin pushbutton
+ 3 2 Pin Circuit Breaker Buttons
+ 1 HC-SR04 Ultrasonic Sensor
